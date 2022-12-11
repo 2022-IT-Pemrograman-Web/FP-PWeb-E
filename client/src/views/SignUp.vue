@@ -1,17 +1,17 @@
 <template>
-    <div class="register">
+    <div class="login">
         <!-- body -->
-        <div class="container" style="margin-top:5rem;">
+        <div class="container" style="margin-top:10rem;">
 
             <div class="row">
 
-                <h1 class="d-flex justify-content-center"  style="font:bold 46px poppins, sans-serif; margin:30px 0 25px 0; color:#000;">
+                <h1 class="d-flex justify-content-center"  style="font:bold 46px poppins, sans-serif; margin:30px 0 75px 0; color:#000;">
                     SIGN UP
                 </h1>
-                <div class="row p-4" style="background-color:#f0f0f0; border:1px solid #c3c3c3; border-radius:5px;">
+                <div class="row p-5" style="background-color:#f0f0f0; border:1px solid #c3c3c3; border-radius:5px;">
 
                     <div class="col text-end m-auto">
-                        <h3 >Sign up anddd</h3>
+                        <h3 >sign up and...</h3>
                         <h1 >Be part of ENDORSIN</h1>
                     </div>
                     <div class="col-sm-1 d-flex justify-content-center align-items-center">
@@ -21,35 +21,11 @@
                         <!-- <div class="body" style="margin: 10rem;"> -->        
                             <form action="" method="post">
                                 <div class="mb-2 row">
-                                    <label for="name" class="d-flex justify-content-start">Name</label>
+                                    <label for="email" class="d-flex justify-content-start">Email</label>
                                 </div>
                                 <div class="mb-3 row d-flex justify-content-center">
                                     <div class="col">
-                                        <input name="name" type="text" class="form-control" id="name" value="">
-                                    </div>
-                                </div>
-                                <div class="mb-2 row">
-                                    <label for="username" class="d-flex justify-content-start">Username</label>
-                                </div>
-                                <div class="mb-3 row d-flex justify-content-center">
-                                    <div class="col">
-                                        <input name="username" type="text" class="form-control" id="username" value="">
-                                    </div>
-                                </div>
-                                <div class="mb-2 row">
-                                    <label for="email" class="d-flex justify-content-start">E-mail</label>
-                                </div>
-                                <div class="mb-3 row d-flex justify-content-center">
-                                    <div class="col">
-                                        <input name="email" type="email" class="form-control" id="email">
-                                    </div>
-                                </div>
-                                <div class="mb-2 row">
-                                    <label for="telepon" class="d-flex justify-content-start">Telepon</label>
-                                </div>
-                                <div class="mb-3 row d-flex justify-content-center">
-                                    <div class="col">
-                                        <input name="telepon" type="text" class="form-control" id="telepon">
+                                        <input name="email" type="email" class="form-control" id="email" value="">
                                     </div>
                                 </div>
                                 <div class="mb-2 row">
@@ -61,18 +37,22 @@
                                     </div>
                                 </div>
                                 <div class="mb-2 row">
-                                    <label for="password2" class="d-flex justify-content-start">Konfirmasi Password</label>
+                                    <label for="role" class="d-flex justify-content-start">Role</label>
                                 </div>
                                 <div class="mb-3 row d-flex justify-content-center">
                                     <div class="col">
-                                        <input name="password2" type="password" class="form-control" id="password2">
+                                        <select class="form-select" aria-label="Default select example" name="role" id="role">
+                                            <option name="role" selected>Pilih Role</option>
+                                            <option name="role" value="Influencer">Influencer</option>
+                                            <option name="role" value="Company">Company</option>
+                                        </select>
                                     </div>
                                 </div>
                                     
                                 <p class="d-flex justify-content-center fst-italic">sudah punya akun?&nbsp;<router-link to="/login" style="color:#E5B323;">login</router-link></p>
                                 
                                 <div class="d-flex justify-content-center">
-                                    <button class="btn" type="submit" name="register" style="background-color:#E5B323; font-weight: 600; color:white; padding:10px 200px">sign up</button>
+                                    <button class="btn" type="submit" name="register" style="background-color:#E5B323; font-weight: 600; color:white; padding:10px 200px">Sign Up</button>
                                 </div>
                             </form>
                         <!-- </div> -->

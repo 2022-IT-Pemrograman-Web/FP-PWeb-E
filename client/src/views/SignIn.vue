@@ -11,7 +11,7 @@
                 <div class="row p-5" style="background-color:#f0f0f0; border:1px solid #c3c3c3; border-radius:5px;">
 
                     <div class="col text-end m-auto">
-                        <h3 >login anddd</h3>
+                        <h3 >login and...</h3>
                         <h1 >let's enjoy our feature</h1>
                     </div>
                     <div class="col-sm-1 d-flex justify-content-center align-items-center">
@@ -21,11 +21,11 @@
                         <!-- <div class="body" style="margin: 10rem;"> -->        
                             <form action="" method="post">
                                 <div class="mb-2 row">
-                                    <label for="username" class="d-flex justify-content-start">Username</label>
+                                    <label for="email" class="d-flex justify-content-start">Email</label>
                                 </div>
                                 <div class="mb-3 row d-flex justify-content-center">
                                     <div class="col">
-                                        <input name="username" type="text" class="form-control" id="username" value="">
+                                        <input name="email" type="email" class="form-control" id="email" value="">
                                     </div>
                                 </div>
                                 <div class="mb-2 row">
@@ -34,6 +34,18 @@
                                 <div class="mb-3 row d-flex justify-content-center">
                                     <div class="col">
                                         <input name="password" type="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="mb-2 row">
+                                    <label for="role" class="d-flex justify-content-start">Role</label>
+                                </div>
+                                <div class="mb-3 row d-flex justify-content-center">
+                                    <div class="col">
+                                        <select class="form-select" aria-label="Default select example" name="role" id="role">
+                                            <option name="role" selected>Pilih Role</option>
+                                            <option name="role" value="Influencer">Influencer</option>
+                                            <option name="role" value="Company">Company</option>
+                                        </select>
                                     </div>
                                 </div>
                                     
