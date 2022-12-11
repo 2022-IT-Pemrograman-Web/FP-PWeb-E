@@ -49,7 +49,7 @@
                                     </div>
                                 </div>
                                     
-                                <p class="d-flex justify-content-center fst-italic">belum punya akun? daftar&nbsp;<a href="/register" style="color:#E5B323;">disini</a> </p>
+                                <p class="d-flex justify-content-center fst-italic">belum punya akun? daftar&nbsp;<router-link to="/register" style="color:#E5B323;">disini</router-link></p>
                                 
                                 <div class="d-flex justify-content-center">
                                     <button class="btn" type="submit" name="login" style="background-color:#E5B323; font-weight: 600; color:white; padding:10px 200px">login</button>
