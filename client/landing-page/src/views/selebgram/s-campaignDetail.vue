@@ -4,7 +4,7 @@
         <h3 class="col" style="margin-bottom:30px;">
             Detail Campaign
         </h3>
-        <CCard style="margin-bottom:100px;">
+        <CCard style="margin-bottom:100px; padding:30px 30px;">
             <!-- <CCardHeader> SELEBGRAM </CCardHeader> -->
             <CCardBody>
                 <!-- <form action="" method="post" style="padding:30px 30px;"> -->
