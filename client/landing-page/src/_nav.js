@@ -11,7 +11,7 @@ export default [
   },
   {
     component: 'CNavTitle',
-    name: 'Selebgram',
+    name: 'Menu',
   },
   {
     component: 'CNavItem',
