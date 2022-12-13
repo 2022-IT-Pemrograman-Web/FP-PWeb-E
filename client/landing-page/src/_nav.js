@@ -15,16 +15,23 @@ export default [
   },
   {
     component: 'CNavItem',
-    name: 'Campaign',
+    name: 'List Campaign',
     to: '/dashboard/campaign',
     icon: 'cil-puzzle',
   },
   {
     component: 'CNavItem',
-    name: 'Channel',
+    name: 'Channel Sosmed',
     to: '/dashboard/channel',
     icon: 'cil-puzzle',
-  }, // out of endorsin
+  }, 
+  {
+    component: 'CNavItem',
+    name: 'Campaign',
+    to: '/dashboard/company_campaign',
+    icon: 'cil-puzzle',
+  }, 
+  // out of endorsin
   // {
   //   component: 'CNavTitle',
   //   name: 'Theme',

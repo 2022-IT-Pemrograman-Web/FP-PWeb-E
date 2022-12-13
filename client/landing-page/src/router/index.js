@@ -80,7 +80,7 @@ const routes = [
             component: Campaign,
           },
           {
-            path: '/dashboard/detail',
+            path: '/dashboard/campaign/detail',
             name: 'Detail Campaign',
             component: CampaignDetail,
           },

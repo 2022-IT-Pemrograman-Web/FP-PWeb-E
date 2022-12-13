@@ -7,7 +7,7 @@
         <CCard style="margin-bottom:100px;">
             <!-- <CCardHeader> SELEBGRAM </CCardHeader> -->
             <CCardBody>
-                <form action="" method="post" style="padding:30px 30px;">
+                <!-- <form action="" method="post" style="padding:30px 30px;"> -->
 
                     <div class="row d-flex justify-content-center">
                         <div class="mb-3 text-start">
@@ -39,12 +39,12 @@
                             <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="3000000">
                         </div>
                     </div>
-                    <div class="row d-flex justify-content-center">
+                    <!-- <div class="row d-flex justify-content-center">
                         <div class="mb-3 text-start">
                             <label for="exampleFormControlInput1" class="form-label ps-1">User ID</label>
                             <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="U-0238384">
                         </div>
-                    </div>
+                    </div> -->
                     
                     <!-- <div class="row d-flex justify-content-center">
                         <div class="mb-3 d-flex justify-content-start">
@@ -55,13 +55,13 @@
                         </div>
                     </div> -->
 
-                    <!-- <div class="row d-flex justify-content-center mt-3">
+                    <div class="row d-flex justify-content-center mt-3">
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-warning ps-5 pe-5" style="padding:5px 20px 5px 20px; color:white;" type="submit">Kirim</button>
+                            <button class="btn btn-success ps-5 pe-5" style="padding:5px 20px 5px 20px; color:white;">Apply</button>
                         </div>
-                    </div> -->
+                    </div>
 
-                </form>
+                <!-- </form> -->
             </CCardBody>
         </CCard>
     </div>
