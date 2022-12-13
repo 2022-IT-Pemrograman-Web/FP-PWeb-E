@@ -20,7 +20,7 @@
 			</CDropdownItem>
 			<hr />
 			<CDropdownItem>
-				<button class="d-flex btn" @click="logoutApp">Logout</button>
+				<button class="d-flex btn justify-content-center w-100" @click="logoutApp">Logout</button>
 				<!-- <router-link class="d-flex btn" to="/logout">
           <p class="d-flex m-auto">
             Logout
