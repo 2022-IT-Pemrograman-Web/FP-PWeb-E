@@ -53,24 +53,10 @@
                             <input type="number" class="form-control" id="price" placeholder="3000000">
                         </div>
                     </div>
-                    <!-- <div class="row d-flex justify-content-center">
-                        <div class="mb-3 text-start">
-                            <label for="exampleFormControlInput1" class="form-label ps-1">Profile ID</label>
-                            <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="U-0238384">
-                        </div>
-                    </div> -->
-                    <!-- <div class="row d-flex justify-content-center">
-                        <div class="mb-3 d-flex justify-content-start">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                &nbsp;Saya menyetujui  <a href="">Syarat & Ketentuan</a> yang berlaku
-                            </label>
-                        </div>
-                    </div> -->
 
                     <div class="row d-flex justify-content-center mt-3">
                         <div class="d-flex justify-content-end">
-                            <button class="btn btn-success ps-5 pe-5" style="padding:5px 20px 5px 20px; color:white;" type="submit">Kirim</button>
+                            <button class="btn btn-success ps-5 pe-5" style="padding:5px 20px 5px 20px; color:white;" type="submit">Perbarui</button>
                         </div>
                     </div>
 

@@ -15,7 +15,7 @@
 						<CTableBody>
 							<CTableRow>
 								<CTableDataCell>
-									<router-link to="/selebgram/channel/form" class="p-4 nav-link d-flex justify-content-start">
+									<router-link to="/dashboard/channel/formUpdate" class="p-4 nav-link d-flex justify-content-start">
 										<div class="row">
 											<CIcon class="col ps-4 pe-4" icon="cil-puzzle" width="30px" style="background-color: #f0f0f0; border-radius: 5px" />
 											<div class="col ms-5 p-auto">
@@ -28,7 +28,7 @@
 							</CTableRow>
 							<CTableRow>
 								<CTableDataCell>
-									<router-link to="/selebgram/channel/form" class="p-4 nav-link d-flex justify-content-start">
+									<router-link to="/dashboard/channel/formUpdate" class="p-4 nav-link d-flex justify-content-start">
 										<div class="row">
 											<CIcon class="col ps-4 pe-4" icon="cil-puzzle" width="30px" style="background-color: #f0f0f0; border-radius: 5px" />
 											<div class="col ms-5 p-auto">
@@ -41,7 +41,7 @@
 							</CTableRow>
 							<CTableRow>
 								<CTableDataCell>
-									<router-link to="/selebgram/channel/form" class="p-4 nav-link d-flex justify-content-start">
+									<router-link to="/dashboard/channel/formUpdate" class="p-4 nav-link d-flex justify-content-start">
 										<div class="row">
 											<CIcon class="col ps-4 pe-4" icon="cil-puzzle" width="30px" style="background-color: #f0f0f0; border-radius: 5px" />
 											<div class="col ms-5 p-auto">
