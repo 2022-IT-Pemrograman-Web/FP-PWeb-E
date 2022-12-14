@@ -1,8 +1,8 @@
 <!-- eslint-disable -->
 <template>
 	<div class="dashboard">
-		<CCard>
-			<CCardHeader>SELEBGRAM</CCardHeader>
+		<CCard style="margin-top:20%">
+			<CCardHeader>Menu</CCardHeader>
 			<CCardBody>
 				<CRow>
 					<div class="col m-3" style="border-radius: 10px; border: 1px solid #d9d9d9">

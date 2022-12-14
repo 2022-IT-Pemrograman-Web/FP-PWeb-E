@@ -8,6 +8,7 @@ import Campaign from '@/views/selebgram/s-campaign.vue'
 import CampaignDetail from '@/views/selebgram/s-campaignDetail.vue'
 import Channel from '@/views/selebgram/s-channel.vue'
 import ChannelForm from '@/views/selebgram/s-channelForm.vue'
+import ChannelFormUpdate from '@/views/selebgram/s-channelFormUpdate.vue'
 import { useAuth0 } from "@auth0/auth0-vue"
 // import About from '../views/AboutView.vue'
 
@@ -105,6 +106,11 @@ const routes = [
             path: '/dashboard/channel/form',
             name: 'Form Channel',
             component: ChannelForm,
+          },
+          {
+            path: '/dashboard/channel/formUpdate',
+            name: 'Form Channel Update',
+            component: ChannelFormUpdate,
           },
         ],
       },
