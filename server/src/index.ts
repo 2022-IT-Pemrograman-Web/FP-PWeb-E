@@ -2,6 +2,8 @@ import express from "express";
 var { expressjwt: jwt } = require("express-jwt");
 var jwks = require("jwks-rsa");
 import { PrismaClient } from "@prisma/client";
+import { checkSchema, validationResult, sanitizeBody } from "express-validator";
+
 const prisma = new PrismaClient();
 const app = express();
 var port = 5000;
@@ -26,7 +28,7 @@ app.get("/public/campaign", async (req, res) => {
 	res.status(200).json(campaigns);
 });
 
-app.post("/campaign", async (req, res) => {
+app.post("/campaign", async (req: express.Request, res: express.Response) => {
 	try {
 		const campaign = await prisma.campaign.create({
 			data: { ...req.body },
