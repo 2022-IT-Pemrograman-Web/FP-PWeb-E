@@ -1,0 +1,27 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://postgres:MEGSS5ngMcza3p2VZkel@containers-us-west-156.railway.app:7165/railway"
+}
+
+model Campaign {
+    id String @id @default(uuid())
+    title String
+    description String
+    price Int
+    start_date DateTime
+    end_date DateTime
+    userId String
+}
+
+model Channel {
+    id String @id @default(uuid())
+    type String
+    url String
+    followers Int
+    price Int
+    userId String
+}
