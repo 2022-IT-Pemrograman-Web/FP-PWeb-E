@@ -15,15 +15,18 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueSpectre from '@devindex/vue-spectre'
 
 const app = createApp(App)
+app.use(router)
 
 app.use(createAuth0({
     domain: "dev-5pvvajiehcpn55g6.us.auth0.com",
     client_id: "fWx02Uh7TdDFufkOrh3un2U7ymGy2Bxa",
+    audience: "https://vue-express-api.com",
+    redirect_uri: window.location.origin,
 
 }))
 app.use(VueSpectre, { locale: 'en' })
 app.use(store)
-app.use(router)
+
 app.use(CoreuiVue)
 app.provide('icons', icons)
 app.component('CIcon', CIcon)

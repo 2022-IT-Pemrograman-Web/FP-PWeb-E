@@ -8,20 +8,28 @@ datasource db {
 }
 
 model Campaign {
-    id String @id @default(uuid())
-    title String
-    description String
-    price Int
-    start_date DateTime
-    end_date DateTime
-    userId String
+  id          String   @id @default(uuid())
+  title       String
+  description String
+  price       Int
+  start_date  DateTime
+  end_date    DateTime
+  userId      String
 }
 
 model Channel {
-    id String @id @default(uuid())
-    type String
-    url String
-    followers Int
-    price Int
-    userId String
+  id        String  @id @default(uuid())
+  type      String
+  url       String
+  username  String
+  followers Int
+  price     Int
+  userId    String
+}
+
+model Offer {
+  id           String   @id @default(uuid())
+  campaignId   String
+  influencerId String
+  status       String
 }

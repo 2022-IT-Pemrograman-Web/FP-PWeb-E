@@ -3,13 +3,20 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import { h, resolveComponent } from 'vue'
-import Profile from '@/views/selebgram/s-profile.vue'
-import Campaign from '@/views/selebgram/s-campaign.vue'
-import CampaignDetail from '@/views/selebgram/s-campaignDetail.vue'
-import Channel from '@/views/selebgram/s-channel.vue'
-import ChannelForm from '@/views/selebgram/s-channelForm.vue'
-import ChannelFormUpdate from '@/views/selebgram/s-channelFormUpdate.vue'
-import { useAuth0 } from "@auth0/auth0-vue"
+import Profile from '@/views/dashboard/s-profile.vue'
+import InfluencerCampaign from '@/views/dashboard/influencer/s-campaign.vue'
+import InfluencerCampaignDetail from '@/views/dashboard/influencer/s-campaignDetail.vue'
+import Channel from '@/views/dashboard/influencer/s-channel.vue'
+import ChannelForm from '@/views/dashboard/influencer/s-channelForm.vue'
+import ChannelFormUpdate from '@/views/dashboard/influencer/s-channelFormUpdate.vue'
+import CampaignCompany from '@/views/dashboard/company/s-campaign.vue'
+import CampaignCompanyDetail from '@/views/dashboard/company/s-campaignDetail.vue'
+import CampaignCompanyAdd from '@/views/dashboard/company/s-campaignAdd.vue'
+import OfferCompany from '@/views/dashboard/company/s-offer.vue'
+import OfferDetailCompany from '@/views/dashboard/company/s-offerDetail.vue'
+import OfferInfluencer from '@/views/dashboard/influencer/s-offer.vue'
+import OfferDetailInfluencer from '@/views/dashboard/influencer/s-offerDetail.vue'
+import { authGuard, useAuth0 } from "@auth0/auth0-vue"
 // import About from '../views/AboutView.vue'
 
 const routes = [
@@ -42,14 +49,7 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: DefaultLayout,
-    beforeEach: (to, from, next) => {
-      const { isAuthenticated } = useAuth0();
-      if (isAuthenticated) {
-        next();
-      } else {
-        next("/");
-      }
-    },
+    beforeEnter: authGuard,
     children: [
       {
         path: '/dashboard',
@@ -67,8 +67,8 @@ const routes = [
       },
       // campaign
       {
-        path: '/dashboard/campaign',
-        name: 'Campaign',
+        path: '/dashboard/campaign/influencer',
+        name: 'Influencer Campaign',
         component: {
           render() {
             return h(resolveComponent('router-view'))
@@ -76,14 +76,40 @@ const routes = [
         },
         children: [
           {
-            path: '/dashboard/campaign',
-            name: 'Campaign',
-            component: Campaign,
+            path: '/dashboard/campaign/influencer',
+            name: 'Influencer Campaign',
+            component: InfluencerCampaign,
           },
           {
-            path: '/dashboard/campaign/detail',
-            name: 'Detail Campaign',
-            component: CampaignDetail,
+            path: '/dashboard/campaign/influencer/detail/:cid',
+            name: 'Influencer Detail Campaign',
+            component: InfluencerCampaignDetail,
+          },
+        ],
+      },
+      {
+        path: '/dashboard/campaign/company',
+        name: 'Company Campaign',
+        component: {
+          render() {
+            return h(resolveComponent('router-view'))
+          },
+        },
+        children: [
+          {
+            path: '/dashboard/campaign/company',
+            name: 'Company Campaign',
+            component: CampaignCompany,
+          },
+          {
+            path: '/dashboard/campaign/company/detail/:cid',
+            name: 'Company Detail Campaign',
+            component: CampaignCompanyDetail,
+          },
+          {
+            path: '/dashboard/campaign/company/add',
+            name: 'Company Add Campaign',
+            component: CampaignCompanyAdd,
           },
         ],
       },
@@ -108,12 +134,60 @@ const routes = [
             component: ChannelForm,
           },
           {
-            path: '/dashboard/channel/formUpdate',
+            path: '/dashboard/channel/form_update/:cid',
             name: 'Form Channel Update',
             component: ChannelFormUpdate,
           },
         ],
       },
+      // offer
+      {
+        path: '/dashboard/offer/company',
+        name: 'Offer',
+        component: {
+          render() {
+            return h(resolveComponent('router-view'))
+          },
+        },
+        children: [
+          {
+            path: '/dashboard/offer/company',
+            name: 'Offer Company',
+            component: OfferCompany,
+          },
+          {
+            path: '/dashboard/offer/company/detail/:id',
+            name: 'Offer Company Detail',
+            component: OfferDetailCompany,
+          },
+        ],
+      },
+      {
+        path: '/dashboard/offer/influencer',
+        name: 'Offer Influencer',
+        component: {
+          render() {
+            return h(resolveComponent('router-view'))
+          },
+        },
+        children: [
+          {
+            path: '/dashboard/offer/influencer',
+            name: 'Offer Influencer',
+            component: OfferInfluencer,
+          },
+          {
+            path: '/dashboard/offer/influencer/detail/:id',
+            name: 'Offer Influencer Detail',
+            component: OfferDetailInfluencer,
+          },
+        ],
+      },
+      {
+        path: '/404',
+        name: 'page404',
+        component: () => import('@/views/pages/Page404.vue'),
+      }
       // theme
       // {
       //   path: '/theme',
