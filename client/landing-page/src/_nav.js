@@ -11,26 +11,51 @@ export default [
   },
   {
     component: 'CNavTitle',
-    name: 'Menu',
+    name: 'Influencer',
+    role: 'influencer'
   },
   {
     component: 'CNavItem',
     name: 'List Campaign',
-    to: '/dashboard/campaign',
+    to: '/dashboard/campaign/influencer',
     icon: 'cil-puzzle',
+    role: 'influencer'
   },
   {
     component: 'CNavItem',
     name: 'Channel Sosmed',
     to: '/dashboard/channel',
     icon: 'cil-puzzle',
-  }, 
+    role: 'influencer'
+  },
+  {
+    component: 'CNavItem',
+    name: 'Offer',
+    to: '/dashboard/offer/influencer',
+    icon: 'cil-puzzle',
+    role: 'influencer'
+  },
+  // company
+  {
+    component: 'CNavTitle',
+    name: 'Company',
+    role: 'company'
+  },
   {
     component: 'CNavItem',
     name: 'Campaign',
-    to: '/dashboard/company_campaign',
+    to: '/dashboard/campaign/company',
     icon: 'cil-puzzle',
-  }, 
+    role: 'company'
+  },
+  {
+    component: 'CNavItem',
+    name: 'Offer',
+    to: '/dashboard/offer/company',
+    icon: 'cil-puzzle',
+    role: 'company'
+  },
+
   // out of endorsin
   // {
   //   component: 'CNavTitle',

@@ -1,5 +1,7 @@
+/* eslint-disable no-unused-vars */
 import { defineComponent, h, onMounted, ref, resolveComponent } from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
+import { useAuth0 } from '@auth0/auth0-vue'
 
 import {
   CBadge,
@@ -51,6 +53,9 @@ const AppSidebarNav = defineComponent({
   },
   setup() {
     const route = useRoute()
+    const { idTokenClaims, isAuthenticated } = useAuth0()
+    const role = idTokenClaims.value['http://localhost:8080/role']
+
     const firstRender = ref(true)
 
     onMounted(() => {
@@ -81,59 +86,68 @@ const AppSidebarNav = defineComponent({
 
       return item.to
         ? h(
-            RouterLink,
-            {
-              to: item.to,
-              custom: true,
-            },
-            {
-              default: (props) =>
-                h(
-                  resolveComponent(item.component),
-                  {
-                    active: props.isActive,
-                    href: props.href,
-                    onClick: () => props.navigate(),
-                  },
-                  {
-                    default: () => [
-                      item.icon &&
-                        h(resolveComponent('CIcon'), {
-                          customClassName: 'nav-icon',
-                          name: item.icon,
-                        }),
-                      item.name,
-                      item.badge &&
-                        h(
-                          CBadge,
-                          {
-                            class: 'ms-auto',
-                            color: item.badge.color,
-                          },
-                          {
-                            default: () => item.badge.text,
-                          },
-                        ),
-                    ],
-                  },
-                ),
-            },
-          )
+          RouterLink,
+          {
+            to: item.to,
+            custom: true,
+          },
+          {
+            default: (props) =>
+              h(
+                resolveComponent(item.component),
+                {
+                  active: props.isActive,
+                  href: props.href,
+                  onClick: () => props.navigate(),
+                },
+                {
+                  default: () => [
+                    item.icon &&
+                    h(resolveComponent('CIcon'), {
+                      customClassName: 'nav-icon',
+                      name: item.icon,
+                    }),
+                    item.name,
+                    item.badge &&
+                    h(
+                      CBadge,
+                      {
+                        class: 'ms-auto',
+                        color: item.badge.color,
+                      },
+                      {
+                        default: () => item.badge.text,
+                      },
+                    ),
+                  ],
+                },
+              ),
+          },
+        )
         : h(
-            resolveComponent(item.component),
-            {},
-            {
-              default: () => item.name,
-            },
-          )
+          resolveComponent(item.component),
+          {},
+          {
+            default: () => item.name,
+          },
+        )
     }
+    // eslint-disable-next-line no-unused-vars
+
+    const filteredNav = nav.filter((item) => {
+      if (item.role) {
+        return item.role === role
+      }
+      return true
+    })
 
     return () =>
       h(
         CSidebarNav,
         {},
         {
-          default: () => nav.map((item) => renderItem(item)),
+          default: () =>
+            filteredNav.map((item) => renderItem(item))
         },
       )
   },

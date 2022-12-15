@@ -3,7 +3,12 @@
 		<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e5b323">
 			<div class="container container-fluid">
 				<a class="navbar-brand" href="#">ENDORSIN</a>
-				<div class="d-flex justify-content-between">
+				<div v-if="isAuthenticated">
+					<router-link to="/dashboard">
+						<button class="btn btn-primary">Go to Dashboard</button>
+					</router-link>
+				</div>
+				<div v-else class="d-flex justify-content-between">
 					<button class="btn btn-outline-secondary mx-4" @click="login">Login</button>
 					<button class="btn btn-primary" @click="login">Register</button>
 				</div>
@@ -143,13 +148,12 @@ import { useAuth0 } from "@auth0/auth0-vue";
 
 export default {
 	setup() {
-		const { loginWithRedirect } = useAuth0();
+		const { loginWithRedirect, isAuthenticated } = useAuth0();
 		return {
 			login: () => {
-				loginWithRedirect({
-					redirect_uri: "http://localhost:8080/dashboard",
-				});
+				loginWithRedirect();
 			},
+			isAuthenticated,
 		};
 	},
 };
