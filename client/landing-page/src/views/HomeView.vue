@@ -21,7 +21,7 @@
 						<p class="text-start mt-5" style="font: bold 46px poppins, sans-serif">PROMOSIKAN UMKM ANDA BERSAMA KAMI</p>
 						<br />
 						<p class="text-start" style="font: 24px montserrat, sans-serif">Temukan ribuan influencer untuk mempromosikan produk anda dengan mudah dan instan</p>
-						<a class="btn btn-primary fw-bold" href="">DAFTAR SEKARANG</a>
+						<a class="btn btn-primary fw-bold" @click="login">DAFTAR SEKARANG</a>
 					</div>
 					<div class="col">
 						<img alt="dashboard1" src="../assets/dashboard1.png" />

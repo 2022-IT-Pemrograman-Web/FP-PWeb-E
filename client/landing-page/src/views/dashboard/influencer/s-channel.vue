@@ -20,7 +20,7 @@
 											<CIcon class="col ps-4 pe-4" icon="cil-puzzle" width="30px" style="background-color: #f0f0f0; border-radius: 5px" />
 											<div class="col ms-5 p-auto">
 												<h4 class="row">{{ item.type }}</h4>
-												<p class="row text-nowrap">{{ item.price }}</p>
+												<p class="row text-nowrap">Rp. {{ item.price }}</p>
 											</div>
 										</div>
 									</router-link>
