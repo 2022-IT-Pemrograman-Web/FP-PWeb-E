@@ -33,7 +33,7 @@
 			<div class="container">
 				<div class="col">
 					<div class="row d-flex justify-content-center">
-						<p class="col-sm-5" style="font: bold 36px poppins, sans-serif">3 Langkah Mudah Untuk Mempromosikan UMKM Anda</p>
+						<p class="col-sm-5 text-center" style="font: bold 36px poppins, sans-serif">3 Langkah Mudah Untuk Mempromosikan UMKM Anda</p>
 					</div>
 					<div class="row">
 						<div class="col text-start m-5 p-4" style="background-color: #fff; border-radius: 10px; box-shadow: 0 8px 24px #c3c3c3">
@@ -59,7 +59,7 @@
 			<div class="container">
 				<div class="col">
 					<div class="row d-flex justify-content-center">
-						<p class="col-sm-5" style="font: bold 36px poppins, sans-serif">Alasan Mengapa Anda Harus Memilih Kami</p>
+						<p class="col-sm-5 text-center" style="font: bold 36px poppins, sans-serif">Alasan Mengapa Anda Harus Memilih Kami</p>
 					</div>
 					<div class="row">
 						<div class="col text-start m-5">
@@ -92,41 +92,41 @@
 			<div class="container">
 				<div class="col">
 					<div class="row d-flex justify-content-center">
-						<p class="col-sm-5" style="font: bold 36px poppins, sans-serif">Bagaimana Pengalaman Mereka?</p>
+						<p class="col-sm-5 text-center" style="font: bold 36px poppins, sans-serif">Bagaimana Pengalaman Mereka?</p>
 					</div>
 					<div class="row">
 						<div class="col text-center m-5 p-5" style="background-color: #fff; border-radius: 10px; box-shadow: 0 8px 24px #c3c3c3">
 							<p style="font-style: italic">“ Endorsin berhasil mempertemukan saya dengan influencer yang tepat. Saya berhasil meningkatkan popularitas bisnis UMKM sekaligus omzet hingga 20%. Terima kasih Endorsin. “</p>
 							<div class="row d-flex align-items-center">
 								<div class="col">
-									<img src="../assets/man.png" alt="" height="75" />
+									<img src="../assets/woman1.png" alt="" height="75" />
 								</div>
 								<div class="col">
-									<p class="row fw-bold mt-3">Nadeo Argawinata</p>
-									<p class="row">Pemilik Toko Baju</p>
+									<p class="row fw-bold mt-3 text-start">Dian Sastrowidjoyo</p>
+									<p class="row">Pemilik Toko ATK</p>
 								</div>
 							</div>
 						</div>
 						<div class="col text-center m-5 p-5" style="background-color: #fff; border-radius: 10px; box-shadow: 0 8px 24px #c3c3c3">
-							<p style="font-style: italic">“ Endorsin berhasil mempertemukan saya dengan influencer yang tepat. Saya berhasil meningkatkan popularitas bisnis UMKM sekaligus omzet hingga 20%. Terima kasih Endorsin. “</p>
+							<p style="font-style: italic">“ Senang bekerja sama dengan ENDORSIN, service yang disediakan ENDORSIN memberikan pelayanan prima yang membuat kami tidak menemukan kesulitan yang berarti dalam melakukan promosi. “</p>
+							<div class="row d-flex align-items-center">
+								<div class="col">
+									<img src="../assets/woman2.png" alt="" height="75" />
+								</div>
+								<div class="col">
+									<p class="row fw-bold mt-3 text-start">Prilly Latuconsinaaa</p>
+									<p class="row">Pemilik Toko Snack</p>
+								</div>
+							</div>
+						</div>
+						<div class="col text-center m-5 p-5" style="background-color: #fff; border-radius: 10px; box-shadow: 0 8px 24px #c3c3c3">
+							<p style="font-style: italic">“ Overall satisfy dengan performance Endorsin yang bisa menghubungkan bisnis saya dengan influencer.Sigap dan cepat dalam eksekusi project yang diberikan. “</p>
 							<div class="row d-flex align-items-center">
 								<div class="col">
 									<img src="../assets/man.png" alt="" height="75" />
 								</div>
 								<div class="col">
-									<p class="row fw-bold mt-3">Nadeo Argawinata</p>
-									<p class="row">Pemilik Toko Baju</p>
-								</div>
-							</div>
-						</div>
-						<div class="col text-center m-5 p-5" style="background-color: #fff; border-radius: 10px; box-shadow: 0 8px 24px #c3c3c3">
-							<p style="font-style: italic">“ Endorsin berhasil mempertemukan saya dengan influencer yang tepat. Saya berhasil meningkatkan popularitas bisnis UMKM sekaligus omzet hingga 20%. Terima kasih Endorsin. “</p>
-							<div class="row d-flex align-items-center">
-								<div class="col">
-									<img src="../assets/man.png" alt="" height="75" />
-								</div>
-								<div class="col">
-									<p class="row fw-bold mt-3">Nadeo Argawinata</p>
+									<p class="row fw-bold mt-3 text-start">Nadeo Argawinata</p>
 									<p class="row">Pemilik Toko Baju</p>
 								</div>
 							</div>
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 		<div class="row4 pt-3" style="background-color: #fff">
-			<div class="row d-flex justify-content-center">
+			<div class="row text-center">
 				<p style="font: poppins, sans-serif">Endorsin Indonesia. All Right Reseved 2022</p>
 			</div>
 		</div>
