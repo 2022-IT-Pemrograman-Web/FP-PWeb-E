@@ -2,7 +2,7 @@
 	<div class="home">
 		<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e5b323">
 			<div class="container container-fluid">
-				<a class="navbar-brand" href="#">ENDORSIN</a>
+				<a class="navbar-brand fw-bold" href="#">ENDORSIN</a>
 				<div class="d-flex justify-content-between">
 					<button class="btn btn-outline-secondary mx-4" @click="login">Login</button>
 					<button class="btn btn-primary" @click="login">Register</button>
