@@ -2,7 +2,7 @@
 	<div class="home">
 		<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #e5b323">
 			<div class="container container-fluid">
-				<a class="navbar-brand" href="#">ENDORSIN</a>
+				<a class="navbar-brand fw-bold" href="#">ENDORSIN</a>
 				<div v-if="isAuthenticated">
 					<router-link to="/dashboard">
 						<button class="btn btn-primary">Go to Dashboard</button>
